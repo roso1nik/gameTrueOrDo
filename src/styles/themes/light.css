@@ -1,0 +1,14 @@
+:root {
+    --font: 'Inter', sans-serif !important;
+    --color: #000;
+    --colorOpacity: #000000e0;
+    --colorInvert: #fff;
+    --colorAction: #0066ff;
+    --colorWhite: #fff;
+    --helpColor: #a3a3a3; 
+    --bgBody: #fff;
+    --bgSecond: #f9f9f9;
+    --bgSecondHelper: #dddddd;
+    --headerBorderBottom: #606060;
+    --boxShadow: #d8d8da;
+}

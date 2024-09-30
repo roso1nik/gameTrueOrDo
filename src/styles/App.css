@@ -1,0 +1,139 @@
+main.start-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.play-buttons, .choosegame-buttons {
+    gap: 10px;
+}
+.play-buttons button, .choosegame-buttons button {
+    background-color: var(--colorAction) !important;
+    color: var(--colorWhite) !important;
+    border-radius: 10px !important;
+    box-shadow: none !important;
+}
+.play-buttons button {
+    font-size: 21px !important;
+    font-weight: 600 !important;
+}
+.choosegame-buttons button {
+    font-size: 14px !important;
+}
+.play-buttons button.nobg-button, .choosegame-buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px !important;
+    background-color: transparent !important;
+    color: var(--color) !important;
+    box-shadow: 0px 0px 7px 0px var(--boxShadow) !important;
+}
+.play-buttons button.nobg-button.noborder {
+    box-shadow: none !important;
+}
+.play-buttons button.nobg-button.noborder path {
+    color: var(--helpColor) !important;
+    background-color: var(--helpColor) !important;
+}
+/* .players-box {
+    background-color: var(--bgSecondHelper) !important;
+    padding: 10px;
+} */
+.players-box input {
+    width: 70%;
+    border: none;
+    box-shadow: inset 0px 0px 0px 1px var(--boxShadow) !important;
+    border: 1px solid var(--boxShadow) !important;
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+}
+.player-li {
+    font-size: large;
+    margin: 10px 0px;
+}
+.question {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.play-buttons button.disabled {
+    background-color: var(--helpColor) !important;
+}
+.feedback svg {
+    width: 20px;
+    height: 20px;
+}
+.penalty-blur {
+    color: transparent;
+    filter: blur(5px) drop-shadow(0px 0px 2px black);
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+.play-buttons button.nobg {
+    background-color: transparent !important;
+}
+.good-message {
+    font-style: italic;
+    font-weight: 500;
+}
+
+
+/* v1.2 */
+.css-1gjgmky-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped:not(:first-of-type) {
+    border-left: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+.css-1gjgmky-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped:not(:first-of-type).Mui-selected {
+    border-left: 1px solid #1976d2 !important;  
+}
+.MuiDialog-paper {
+    background-color: var(--bgSecondHelper) !important;
+}
+.MuiSwitch-track {
+    background-color: var(--helpColor) !important;
+}
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track {
+    background-color: #1976d2 !important;
+}
+
+.infinite-text {
+    height: 56px;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    animation: infinite-text 30s infinite;
+}
+.infinite-text::-webkit-scrollbar {
+    width: 0px !important;
+}
+.infinite-text-revert {
+    height: 56px;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    animation: infinite-text-revert 30s infinite;
+}
+.infinite-text-revert::-webkit-scrollbar {
+    width: 0px !important;
+}
+
+@keyframes infinite-text {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(300px);
+    }
+}
+@keyframes infinite-text-revert {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-300px);
+    }
+}
+
+.alert-box .MuiDialog-paper {
+    background-color: var(--bgBody) !important;
+}

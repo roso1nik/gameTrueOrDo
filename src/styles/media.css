@@ -1,0 +1,64 @@
+@media (max-width: 768px) and (min-width: 425px) {
+    .settings {
+        margin-top: -10rem;
+    }
+    .feedback {
+        gap: 5px !important;
+    }
+    .feedback > * {
+        width: 100% !important;
+    }
+    .aic_f {
+        align-items: center !important;
+        width: 100%;
+    }
+    .alert-box .MuiDialog-paper {
+        min-width: 80% !important;
+    }
+}
+
+@media (max-width: 424px) and (min-width: 0px) {
+    .settings {
+        margin-top: -10rem;
+    }
+    .play-buttons button {
+        font-size: 18px !important;
+    }
+    .MuiToggleButtonGroup-root button {
+        font-size: 12px !important;
+    }
+    .title {
+        font-size: 2.75rem !important;
+    }
+    main.start-page {
+        height: unset !important;
+    }
+    .hello {
+        margin-bottom: 2rem;
+    }
+    .players-box input {
+        width: 100% !important;
+    }
+    .feedback {
+        gap: 5px !important;
+    }
+    .feedback > * {
+        width: 100% !important;
+    }
+    .aic_f {
+        align-items: center !important;
+        width: 100%;
+    }
+    .alert-box .MuiDialog-paper {
+        min-width: 80% !important;
+    }
+}
+
+@media (max-height: 555px) {
+    main {
+        padding-top: 5rem !important;
+    }
+    main.start-page {
+        height: unset !important;
+    }
+}
